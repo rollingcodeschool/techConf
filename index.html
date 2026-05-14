@@ -1,18 +1,196 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>TechConf</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">TechConf</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Speakers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Preguntas frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registro</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- hero section -->
+      <section class="text-center bg-hero">
+        <h1 class="display-1 fw-bold">Congreso de Tecnología 2026</h1>
+        <p class="lead">Aprendé sobre React, Next.js y el futuro de la IA</p>
+        <button class="btn btn-primary">Quiero inscribirme</button>
+      </section>
+      <!-- seccion formulario de registro -->
+      <section id="speakers" class="my-4 container">
+        <h2 class="mb-4 display-3 text-center">Nuestros Speakers</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="https://images.pexels.com/photos/5484132/pexels-photo-5484132.jpeg"
+                class="card-img-top"
+                alt="Mateo Vaccari"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mateo Vaccari</h5>
+                <p class="text-muted">Lead Frontend Engineer</p>
+                <p class="card-text">
+                  Especialista en arquitecturas escalables con Next.js y
+                  entusiasta del Open Source. Nos contará cómo optimizar el Core
+                  Web Vitals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="https://images.pexels.com/photos/9391652/pexels-photo-9391652.jpeg"
+                class="card-img-top"
+                alt="Valentina Rivas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Valentina Rivas</h5>
+                <p class="text-muted">UX/UI Designer Senior</p>
+                <p class="card-text">
+                  Enfocada en accesibilidad y diseño centrado en el usuario.
+                  Explicará cómo la IA está transformando el proceso creativo en
+                  Figma.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="https://images.pexels.com/photos/17594381/pexels-photo-17594381.jpeg"
+                class="card-img-top"
+                alt="Julián Solórzano"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Julián Solórzano</h5>
+                <p class="text-muted">Fullstack Developer</p>
+                <p class="card-text">
+                  Experto en Node.js y bases de datos NoSQL. Su charla se
+                  centrará en la seguridad en APIs y el manejo de autenticación
+                  JWT.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="https://images.pexels.com/photos/8100061/pexels-photo-8100061.jpeg"
+                class="card-img-top"
+                alt="Lucia Di Marco"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lucia Di Marco</h5>
+                <p class="text-muted">Cloud Architecture Specialist</p>
+                <p class="card-text">
+                  Certificada en AWS y Azure. Mostrará las mejores prácticas
+                  para migrar arquitecturas monolíticas a microservicios en la
+                  nube.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="https://images.pexels.com/photos/14868028/pexels-photo-14868028.jpeg"
+                class="card-img-top"
+                alt="Enzo Méndez"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Enzo Méndez</h5>
+                <p class="text-muted">AI Research Engineer</p>
+                <p class="card-text">
+                  Investigador en modelos de lenguaje a gran escala. Discutirá
+                  el impacto ético y técnico de los agentes autónomos en la
+                  industria.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="registroForm" class="py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+              <h2>Registrarse al Evento</h2>
+              <form class="mt-4">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre Completo"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Tu Email"
+                  />
+                </div>
+                <butto type="submit" class="btn btn-success w-100"
+                  >Enviar Registro</butto
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center py-5 bg-black">
+      <p>
+        &copy; 2026 TechConf - Tucumán, Argentina. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+section{
+    scroll-margin-top: 50px;
+}
+
+.hero-section {
+  background: radial-gradient(rgba(14, 44, 144, 0.6), rgba(0, 0, 0, 0.6));
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+
+.card-img-top {
+  max-height: 195px;
+  object-fit: cover;
+}
+
+
+.section-preguntas {
+  background: radial-gradient(rgba(7, 22, 73, 0.6), rgba(0, 0, 0, 0.6));
+  padding: 40px 0;
+}
+
+/* seccion hero */
+.bg-hero{
+  background: radial-gradient(rgba(7, 22, 73, 0.6), rgba(0, 0, 0, 0.6));
+  padding: 70px 0px;
+}
